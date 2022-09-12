@@ -28,7 +28,7 @@ func NewSAPAPICaller(baseUrl, sapClientNumber string, requestClient *sap_api_req
 	}
 }
 
-func (c *SAPAPICaller) AsyncGetBP(businessPartner, businessPartnerRole, addressID, bankCountryKey, bankNumber, bPName string, accepter []string) {
+func (c *SAPAPICaller) AsyncGetBP(businessPartner, businessPartnerRole, addressID, bankCountryKey, bankNumber, businessPartnerName string, accepter []string) {
 	wg := &sync.WaitGroup{}
 	wg.Add(len(accepter))
 	for _, fn := range accepter {
@@ -55,7 +55,7 @@ func (c *SAPAPICaller) AsyncGetBP(businessPartner, businessPartnerRole, addressI
 			}()
 		case "BPName":
 			func() {
-				c.BPName(bPName)
+				c.BPName(businessPartnerName)
 				wg.Done()
 			}()
 		default:
@@ -243,8 +243,8 @@ func (c *SAPAPICaller) callBPSrvAPIRequirementBank(api, businessPartner, bankCou
 	return data, nil
 }
 
-func (c *SAPAPICaller) BPName(bPName string) {
-	data, err := c.callBPSrvAPIRequirementBPName("A_BusinessPartner", bPName)
+func (c *SAPAPICaller) BPName(businessPartnerName string) {
+	data, err := c.callBPSrvAPIRequirementBPName("A_BusinessPartner", businessPartnerName)
 	if err != nil {
 		c.log.Error(err)
 		return
@@ -303,10 +303,10 @@ func (c *SAPAPICaller) getQueryWithBank(params map[string]string, businessPartne
 	return params
 }
 
-func (c *SAPAPICaller) getQueryWithBPName(params map[string]string, bPName string) map[string]string {
+func (c *SAPAPICaller) getQueryWithBPName(params map[string]string, businessPartnerName string) map[string]string {
 	if len(params) == 0 {
 		params = make(map[string]string, 1)
 	}
-	params["$filter"] = fmt.Sprintf("substringof('%s', BpName)", bPName)
+	params["$filter"] = fmt.Sprintf("substringof('%s', BusinessPartnerName)", businessPartnerName)
 	return params
 }

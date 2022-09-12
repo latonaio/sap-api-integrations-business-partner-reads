@@ -4,7 +4,7 @@
 	"redis_key": "abcdefg",
 	"filepath": "/var/lib/aion/Data/rededge_sdc/abcdef.json",
 	"business_partner": {
-		"BusinessPartner": "1000140",
+		"BusinessPartner": "101",
 		"Customer": "",
 		"Supplier": "",
 		"AcademicTitle": "",
@@ -57,7 +57,7 @@
 			"ValidTo": ""
 		},
 		"Address": {
-			"AddressID": "27518",
+			"AddressID": "23628",
 			"ValidityStartDate": "",
 			"ValidityEndDate": "",
 			"Country": "",
@@ -89,6 +89,6 @@
 	},
 	"api_schema": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
 	"accepter": ["Address"],
-	"business_partner_code": "1000140",
+	"business_partner_code": "101",
 	"deleted": false
 }
