@@ -141,7 +141,7 @@ func (c *SAPAPICaller) AsyncGetBP(businessPartner, businessPartnerRole, addressI
 			"BusinessPartnerName": "Test Customer",
 			"CorrespondenceLanguage": "",
 			"CreationDate": "2022-09-10",
-			"CreationTime": "PT10H31M29S",
+			"CreationTime": "10:31:29",
 			"FirstName": "",
 			"Industry": "",
 			"IsFemale": false,
@@ -150,8 +150,8 @@ func (c *SAPAPICaller) AsyncGetBP(businessPartner, businessPartnerRole, addressI
 			"IsSexUnknown": false,
 			"GenderCodeName": "",
 			"Language": "",
-			"LastChangeDate": "2022-09-10",
-			"LastChangeTime": "PT11H01M37S",
+			"LastChangeDate": "2022-09-14",
+			"LastChangeTime": "18:58:32",
 			"LastName": "",
 			"OrganizationBPName1": "Test Customer",
 			"OrganizationBPName2": "",
@@ -182,6 +182,6 @@ func (c *SAPAPICaller) AsyncGetBP(businessPartner, businessPartnerRole, addressI
 			"to_BusinessPartnerBank": "http://100.21.57.120:8080/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('101')/to_BusinessPartnerBank"
 		}
 	],
-	"time": "2022-09-12T20:17:44+09:00"
+	"time": "2022-09-15T10:10:51+09:00"
 }
 ```
