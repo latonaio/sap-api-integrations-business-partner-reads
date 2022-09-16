@@ -7,8 +7,8 @@
 			"BusinessPartner": "101",
 			"BusinessPartnerRole": "FLCU01",
 			"ValidFrom": "2022-09-10",
-			"ValidTo": "10000-01-01T08:59:59+09:00"
+			"ValidTo": "9999-12-31"
 		}
 	],
-	"time": "2022-09-12T23:05:21+09:00"
+	"time": "2022-09-16T21:03:33+09:00"
 }

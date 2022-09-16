@@ -7,7 +7,7 @@
 			"BusinessPartner": "101",
 			"AddressID": "23628",
 			"ValidityStartDate": "2022-09-10",
-			"ValidityEndDate": "10000-01-01T08:59:59+09:00",
+			"ValidityEndDate": "9999-12-31",
 			"Country": "JP",
 			"Region": "13",
 			"StreetName": "Test",
@@ -16,5 +16,5 @@
 			"Language": "JA"
 		}
 	],
-	"time": "2022-09-15T10:10:51+09:00"
+	"time": "2022-09-16T21:04:18+09:00"
 }

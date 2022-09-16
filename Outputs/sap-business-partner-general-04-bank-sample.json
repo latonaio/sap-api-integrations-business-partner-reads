@@ -14,7 +14,7 @@
 			"BankAccountHolderName": "Test",
 			"BankAccountName": "Test",
 			"ValidityStartDate": "2022-09-12",
-			"ValidityEndDate": "10000-01-01T08:59:59+09:00",
+			"ValidityEndDate": "9999-12-31",
 			"IBAN": "",
 			"IBANValidityStartDate": "",
 			"BankAccount": "12345678",
@@ -24,5 +24,5 @@
 			"AuthorizationGroup": ""
 		}
 	],
-	"time": "2022-09-15T10:10:51+09:00"
+	"time": "2022-09-16T21:04:19+09:00"
 }
