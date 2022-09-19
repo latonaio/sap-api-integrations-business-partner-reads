@@ -61,6 +61,7 @@ type General struct {
 	ToRole                         string      `json:"to_BusinessPartnerRole"`
 	ToAddress                      string      `json:"to_BusinessPartnerAddress"`
 	ToBank                         string      `json:"to_BusinessPartnerBank"`
+	ToContact                      string      `json:"to_BusinessPartnerContact"`
 }
 
 type Role struct {
@@ -143,4 +144,15 @@ type ToBank struct {
 	CollectionAuthInd        bool        `json:"CollectionAuthInd"`
 	CityName                 string      `json:"CityName"`
 	AuthorizationGroup       string      `json:"AuthorizationGroup"`
+}
+
+type ToContact struct {
+	BusinessPartner               string `json:"BusinessPartner"`
+	RelationshipNumber            string `json:"RelationshipNumber"`
+	BusinessPartnerCompany        string `json:"BusinessPartnerCompany"`
+	BusinessPartnerPerson         string `json:"BusinessPartnerPerson"`
+	ValidityEndDate               string `json:"ValidityEndDate"`
+	ValidityStartDate             string `json:"ValidityStartDate"`
+	IsStandardRelationship        string `json:"IsStandardRelationship"`
+	RelationshipCategory          string `json:"RelationshipCategory"`
 }

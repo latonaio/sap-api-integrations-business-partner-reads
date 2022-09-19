@@ -140,6 +140,15 @@ type SDC struct {
 			CityName                 string `json:"CityName"`
 			AuthorizationGroup       string `json:"AuthorizationGroup"`
 		} `json:"Bank"`
+		Contact struct {
+			RelationshipNumber            string `json:"RelationshipNumber"`
+			BusinessPartnerCompany        string `json:"BusinessPartnerCompany"`
+			BusinessPartnerPerson         string `json:"BusinessPartnerPerson"`
+			ValidityEndDate               string `json:"ValidityEndDate"`
+			ValidityStartDate             string `json:"ValidityStartDate"`
+			IsStandardRelationship        string `json:"IsStandardRelationship"`
+			RelationshipCategory          string `json:"RelationshipCategory"`
+		} `json:"Contact"`
 	} `json:"business_partner"`
 	APISchema           string   `json:"api_schema"`
 	Accepter            []string `json:"accepter"`

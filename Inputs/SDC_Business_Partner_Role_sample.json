@@ -85,9 +85,18 @@
 			"CollectionAuthInd": null,
 			"CityName": "",
 			"AuthorizationGroup": ""
+		},
+		"Contact": {
+			"RelationshipNumber": "",
+			"BusinessPartnerCompany": "",
+			"BusinessPartnerPerson": "",
+			"ValidityEndDate": "",
+			"ValidityStartDate": "",
+			"IsStandardRelationship": "",
+			"RelationshipCategory": ""
 		}
 	},
-	"api_schema": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
+	"api_schema": "SAPBusinessPartnerReads",
 	"accepter": ["Role"],
 	"business_partner_code": "101",
 	"deleted": false
